@@ -12,10 +12,8 @@ http://maven.apache.org/maven-v4_0_0.xsd
 	<name>JenkinsCI-Test</name>
 	
 	<build>
-		<sourceDirectory>src</sourceDirectory>
-		
-		<plugins>		
-			
+		<sourceDirectory>src</sourceDirectory>		
+		<plugins>					
 			<!-- Dodanie wtyczek obsługujących raporty Maven -->		
 			<plugin>
  				<groupId>org.apache.maven.plugins</groupId>
@@ -33,15 +31,14 @@ http://maven.apache.org/maven-v4_0_0.xsd
  			</plugin>
  			
  			<plugin>
-        		<groupId>org.apache.maven.plugins</groupId>
-          		<artifactId>maven-checkstyle-plugin</artifactId>
-        	</plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-checkstyle-plugin</artifactId>
+			</plugin>
         	
-         	<plugin>
- 				<groupId>org.apache.maven.plugins</groupId>
- 				<artifactId>maven-jxr-plugin</artifactId>
- 			</plugin>
- 			
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+			</plugin> 			
 		</plugins>
 	</build>
 </project>
